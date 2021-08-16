@@ -5,3 +5,6 @@ bash -c "echo kernel.shmall = 1152921504606846720 >> /etc/sysctl.conf"
 sysctl -p /etc/sysctl.conf
 apt update
 apt install memcached libnuma-dev
+tar xvf MLNX_OFED_LINUX-4.9-3.1.5.0-ubuntu20.04-x86_64.tgz
+cd MLNX_OFED_LINUX-4.9-3.1.5.0-ubuntu20.04-x86_64
+./mlnxofedinstall --force
